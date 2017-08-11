@@ -44,9 +44,8 @@ for i in sent_list:
 		
 		if (w not in stop_words):
 			word = sno.stem(w)
-			sent_stop.append(word)
+			sent_stop.append(str(word))
 		
 	after_stopping.append(sent_stop)
 	
-for i in range(len(after_stopping)):
-	print str(i)+':',after_stopping[i]
+sim_matrix = [[0]*len(sent_list) for i in range(len(sent_list))]
