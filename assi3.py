@@ -44,7 +44,7 @@ for i in sent_list:
 		
 		if (w not in stop_words):
 			word = sno.stem(w)
-			sent_stop.append(str(word))
+			sent_stop.append(str(word))			### testing edit
 		
 	after_stopping.append(sent_stop)
 	
